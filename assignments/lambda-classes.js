@@ -48,3 +48,41 @@ class Student extends Instructor {
     console.log(`${this.name} has begun sprint challenge on ${str}`);
   }
 }
+class Projectmanager extends Instructor {
+  constructor(attr) {
+    super(attr);
+    this.gradClassName = attr.gradClassName;
+    this.favInstructor = attr.favInstructor;
+  }
+
+  standUp(sc) {
+    console.log(`${this.name} announces to ${sc}, @channel standy times!`);
+  }
+
+  debugsCode(obj, sub) {
+    console.log(`${this.name} debugs ${obj.name}'s code on ${sub}`);
+  }
+}
+
+const student1 = new Student({
+  previousBackground: "Python",
+  className: "CS10",
+  favSubjects: "Constructors and prototypes",
+  favLanguage: "Ruby",
+  name: "Anthony",
+  age: 23,
+  location: "Dallas, TX"
+});
+
+const projectManager1 = new Projectmanager({
+  gradClassName: "CS2",
+  favInstructor: "Josh",
+  previousBackground: "C++",
+  catchPhrase: "To infinity anf beyond!",
+  name: "John"
+});
+
+console.log(student1.prAssignment("CSS"));
+console.log(student1.sprintChallenge("Javascript Fundamentals"));
+console.log(projectManager1.standUp("@webpt4"));
+console.log(projectManager1.name);
