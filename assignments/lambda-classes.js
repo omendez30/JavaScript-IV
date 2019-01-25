@@ -77,7 +77,7 @@ const student1 = new Student({
 const projectManager1 = new Projectmanager({
   gradClassName: "CS2",
   favInstructor: "Josh",
-  previousBackground: "C++",
+  specialty: "React",
   catchPhrase: "To infinity anf beyond!",
   name: "John"
 });
@@ -85,4 +85,4 @@ const projectManager1 = new Projectmanager({
 console.log(student1.prAssignment("CSS"));
 console.log(student1.sprintChallenge("Javascript Fundamentals"));
 console.log(projectManager1.standUp("@webpt4"));
-console.log(projectManager1.name);
+console.log(projectManager1.specialty);
